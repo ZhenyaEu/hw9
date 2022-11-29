@@ -1,0 +1,65 @@
+<body>
+    <script>
+
+        function cloneObj(obj) {
+            let clone = {};
+            for (const key in obj) {
+                clone[key] = obj[key];
+            }
+            return clone;
+        }
+
+
+
+
+
+        function getValues(obj) {
+            var values = [];
+            for (const key in obj) {
+                values[values.length] = obj[key];
+            }
+            return values;
+        }
+
+
+
+        function getKeys(obj) {
+            var keys = [];
+            for (const key in obj) {
+                keys[keys.length] = key;
+            }
+            return keys;
+        }
+
+
+
+
+        function getEntries(obj) {
+            var keys = [];
+            for (const key in obj) {
+                keys[keys.length] = [key, obj[key]];
+            }
+            return keys;
+        }
+
+
+
+
+        const testObject = {
+            name: 'house',
+            area: 'california',
+            bedrooms: 3,
+            price: 500000
+        };
+
+        console.log(cloneObj(testObject));
+
+        console.log(getValues(testObject));
+
+        console.log(getKeys(testObject));
+
+        console.log(getEntries(testObject));
+
+
+    </script>
+</body>
