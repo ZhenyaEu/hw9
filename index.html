@@ -14,7 +14,7 @@
 
 
         function getValues(obj) {
-            var values = [];
+            let values = [];
             for (const key in obj) {
                 values[values.length] = obj[key];
             }
@@ -24,7 +24,7 @@
 
 
         function getKeys(obj) {
-            var keys = [];
+            let keys = [];
             for (const key in obj) {
                 keys[keys.length] = key;
             }
@@ -35,7 +35,7 @@
 
 
         function getEntries(obj) {
-            var keys = [];
+            let keys = [];
             for (const key in obj) {
                 keys[keys.length] = [key, obj[key]];
             }
